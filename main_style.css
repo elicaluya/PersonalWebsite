@@ -40,3 +40,11 @@ input.article_buttons:hover {
 input.article_buttons:active {
     transform: translateY(7px);
 }
+
+div.homepage {
+  background-image: url("images/profile_pic.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: rgba(0,0,0,.5);
+}

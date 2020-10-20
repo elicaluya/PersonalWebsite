@@ -32,6 +32,23 @@
   		  	background-color: #D1B8B3;
   		  	box-shadow:  0 8px 16px 0 rgba(0,0,0,0.8), 0 6px 20px 0 rgba(0,0,0,0.8);
   		}
+
+      body {
+        background-image: url("images/profile_pic.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-color: #2f8510;
+      }
+
+      div.front_page {
+        background-color: white;
+        opacity: 0.75;
+      }
+
+      div.introduction {
+        opacity: 1.0;
+      }
   	</style>
 </head>
 <body>
@@ -40,7 +57,7 @@
 <!-- Segment for the Navbar -->
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
-    <div class="navbar-header">
+    <div class="navbar-header" style="text-align: center">
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="main.html">Home</a></li>
@@ -56,10 +73,16 @@
 <button onclick="scrollToTop()" id="scrollButton" title="Scroll to Top">Top</button>
 
 
-<br><br><br>
-<div style="text-align: center">
-  <h1>Elijah Caluya</h1>
-
+<br>
+<div style="text-align: center" class="front_page">
+  <br><br>
+  <img src="images/name_text.png">
+  <div class="introduction">
+    <br>
+    <p>
+      Hello! My name is Elijah Caluya
+    </p>
+  </div>
   <a href="../../Documents/Resume_ElijahCaluya.pdf" download>Download Resume</a>
 </div>
 
