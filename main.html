@@ -13,18 +13,20 @@
         background-repeat: no-repeat;
         background-position: center;
         background-attachment: fixed;
-        background-color: #71c9bf;
+        background-color: #0c1e33;
       }
 
       div.front_page {
         background-color: white;
-        border: 1px solid black;
-        margin-left: 30px;
-        margin-right: 30px;
+        border: 3px solid black;
+        border-radius: 25px;
+        margin-left: 40px;
+        margin-right: 40px;
       }
 
       div.introduction {
-        
+        position: relative;
+        bottom: 100px;
         padding-left: 40px;
         padding-right: 20px;
         width: 50%;
@@ -32,15 +34,28 @@
       }
 
       div.picture {
+        position: relative;
+        top: 20px;
         padding-top: 10px;
+        padding-bottom: 10px;
         width: 50%;
         display: table-cell;
-
       }
 
       .profile_pic {
-        max-width:70%;
-        max-height:70%;
+        border: 2px solid black;
+        border-radius: 25px;
+        max-width:60%;
+        max-height:60%;
+      }
+
+      footer {
+        position: absolute;
+        bottom: 15px;
+        width: 100%;
+        text-align: center;
+        color: white; 
+        font-family: monospace;
       }
 
 
@@ -67,14 +82,15 @@
 
 <div style="text-align: center" class="front_page">
 
-  <div class="introduction" style="text-align: center; font-family: courier;">
-    <h1>Elijah Caluya</h1>
+  <div class="introduction" style="text-align: center; font-family: monospace;">
+    <h1><b>Elijah Caluya</b></h1>
     <br>
     <p>
-      I am currently a part-time student at DePaul University studying for an MS in Computer Science with a focus in Human-Computer Interaction. I have about 2.5 years of professional experience working at Macy's Inc. in San Francisco, CA as an Ecommerce Operations Engineer. I am based in the Bay Area and am currently looking for opportunities in Software Engineering and UX in the West Coast. If you would like to learn more about me, please feel free to check out the tabs above to see some of my past projects, work experience, and my hobbies and interests. Also, my resume is available to download via the link below.
+      I am currently a part-time student at DePaul University studying for an MS in Computer Science with a focus in Human-Computer Interaction. I have about 2+ years of professional experience working at Macy's Inc. in San Francisco, CA as an Ecommerce Operations Engineer. I am based in the Bay Area and am currently looking for opportunities in Software Engineering and UX. If you would like to learn more about me, please feel free to check out the tabs above to see some of my past projects, work experience, and my hobbies and interests. Also, my resume is available to download via the link below as well as a link to my Github page.
     </p>
-    <br>
     <a href="../../Documents/Resume_ElijahCaluya.pdf" download>Download Resume</a>
+    <br>
+    <a href="https://github.com/elicaluya" target="_blank">Visit my Github Page</a>
   </div>
 
   <div class="picture">
@@ -85,8 +101,15 @@
   <br><br>
 </div>
 
-
-
+<footer>
+  <p>
+    Email: elicaluya@gmail.com
+  </p>
+  <h5>Social Media:</h5>
+  <a href="https://www.facebook.com/eli.cal/" target="_blank"><img src="images/facebook_icon.png" class="fb"></a>
+  <a href="https://twitter.com/elijah_caluya" target="_blank"><img src="images/twitter_icon.png" class="twt"></a>
+  <a href="https://www.instagram.com/elijah_caluya/" target="_blank"><img src="images/instagram_icon.png" class="insta"></a>
+</footer>
 
 
 
