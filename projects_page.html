@@ -8,30 +8,36 @@
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
   	<style>
-  		/*Styling for the scroll button */
-  		#scrollButton {
-  		  	display: none;
-  		  	position: fixed;
-  		  	bottom: 20px;
-  		  	right: 30px;
-  		  	z-index: 99;
-  		  	font-size: 18px;
-  		  	border: none;
-  		  	outline: none;
-  		  	background-color: #abc4ed;
-  		  	color: black;
-  		  	cursor: pointer;
-  		  	padding: 15px;
-  		  	border-radius: 20px;
-  		  	-webkit-transition-duration: 0.4s;  /* For Safari */
-    		transition-duration: 0.4s;
-    		box-shadow:  0 8px 16px 0 rgba(0,0,0,0.3), 0 6px 20px 0 rgba(0,0,0,0.3);
-  		}
 
-  		#scrollButton:hover {
-  		  	background-color: #D1B8B3;
-  		  	box-shadow:  0 8px 16px 0 rgba(0,0,0,0.8), 0 6px 20px 0 rgba(0,0,0,0.8);
-  		}
+      div.project {
+        font-family: monospace;
+        text-align: center;
+        border: 3px;
+        border-style: solid;
+        border-color: #162a36;
+        border-radius: 25px;
+        margin-left: 50px;
+        margin-right: 50px;
+        box-shadow: 5px 10px 8px #162a36;
+      }
+  		
+      div.description {
+        text-align: left;
+        position: relative;
+        padding-left: 5%;
+        padding-right: 5%;
+        bottom: 70px;
+        width: 50%;
+        display: table-cell;
+      }
+
+      div.screenshot {
+        top: 20px;
+        position: relative;
+        width: 50%;
+        display: table-cell;
+      }
+
   	</style>
 </head>
 <body>
@@ -46,19 +52,139 @@
     <ul class="nav navbar-nav">
       <li><a href="main.html">Home</a></li>
       <li class="active"><a href="projects_page.html">Projects</a></li>
-      <li><a href="work_page.html">Work Experience</a></li>
+      <li><a href="work_page.html">Experience</a></li>
       <li><a href="hobbies_page.html">Hobbies and Interests</a></li>
     </ul>
   </div>
 </nav>
 
+<br><br><br>
+
+<div class="project">
+  <h2><b>Guess the Sneaker Android App</b></h2>
+  <div class="description">
+    <p><b>Languages Used:</b> Java</p>
+    <p><b>IDE/Applications Used:</b> Android Studio</p>
+    <ul>
+      <li>Android App game on the Google Play Store where User has to guess the correct model and colorway of a shoe when presented.</li>
+      <li>Approximately over 67k total downloads and a 4.1 star rating.</li>
+      <li>The project was originally the final project for one of my classes, but I continued to work on it after graduation to improve it.</li>
+      <li>Some updates that I have added: answers section, functionality to change settings, and increased the number of shoes to guess from.</li>
+    </ul>
+  </div>
+  <div class="screenshot">
+    <img src="images/GTS_screenshot.png" class="screenshot">
+  </div>
+  <a href="https://play.google.com/store/apps/details?id=edu.uoregon.ecaluya.sneaker_game" target="_blank">Link to game on Google Play Store</a>
+  <br>
+  <a href="https://github.com/elicaluya/android_apps/tree/master/Sneaker_Game" target="_blank">Link to Github repository</a>
+  <br><br>
+</div>
+
+<br><br>
+
+<div class="project">
+  <h2><b>Video Store Rental Application</b></h2>
+  <div class="description">
+    <p><b>Languages Used:</b> Java, JUnit, HTML</p>
+    <p><b>IDE/Applications Used:</b> Eclipse</p>
+    <ul>
+      <li>Java Project of a database and logging system that a video rental store would use to keep track of their inventory and transactions.</li>
+      <li>Functionality: adding/removing videos, checking in/out videos, printing the inventory, clearing the inventory, redo/undo last command, sorting videos, and filling with bogus data for testing. </li>
+      <li>Unit test cases are also implemented using JUnit.</li>
+      <li>Can be run via the command line or in a GUI depending on the argument passed when running the Java file.</li>
+      <li>Implemented with package private and Factory pattern for class objects as well as utilizes Javadocs for clear documentation.</li>
+      <li>Screenshot shows the program in command line view and in a GUI.</li>
+    </ul>
+  </div>
+  <div class="screenshot">
+    <img src="images/VideoStore_screenshot2.png" class="screenshot">
+    <img src="images/VideoStore_screenshot1.png" class="screenshot">
+    <br>
+  </div>
+  <a href="https://github.com/elicaluya/SE_450/tree/master/hw-03" target="_blank">Link to Github repository</a>
+  <br><br>
+</div>
+
+<br><br>
+
+<div class="project">
+  <h2><b>Blockchain Technology Education Tool</b></h2>
+  <div class="description">
+    <p><b>Languages Used:</b> Java</p>
+    <p><b>IDE/Applications Used:</b> Eclipse, XML</p>
+    <ul>
+      <li>Java project that simulated blockchain technology with 3 nodes.</li>
+      <li>Uses script to start three different processes of Blockchain nodes where they each compete to verify a puzzle.</li>
+      <li>A Ledger is updated with node that verified puzzle first and the nodes communicate with each other to know who solved the puzzle and when to stop.</li>
+      <li>Operated through the command line and creates an output XML file that shows how the final result and how the nodes communicate with each other.</li>
+      <li>Simulates how Blockchain/Ledger-based entities that large companies may use, operate in a smaller and easier to interpret setting.</li>
+      <li>Screenshot shows the output of one process communicatin with the other nodes about a puzzle being solveed and updating the ledger.</li>
+    </ul>
+  </div>
+  <div class="screenshot">
+    <img src="images/Blockchain_screenshot.png" class="screenshot">
+    <br>
+  </div>
+  <a href="https://github.com/elicaluya/CSC_435/tree/master/BlockChain" target="_blank">Link to Github repository</a>
+  <br><br>
+</div>
+
+<br><br>
+
+<div class="project">
+  <h2><b>REST API Quote Service</b></h2>
+  <div class="description">
+    <p><b>Languages Used:</b> Java</p>
+    <p><b>IDE/Applications Used:</b> Eclipse, Maven, XML</p>
+    <ul>
+      <li>REST API Service where user connects to service and can request and make changes through through HTTP requests.</li>
+      <li>Retrieves specific quotes or all quotes via GET HTTP request with specific URI.</li>
+      <li>Functionality to display all quotes via index pagination where you can specify the amount of pages and quotes per page with specific URI.</li>
+      <li>Can update quotes with a PUT HTTP request and can add a new quote with POST HTTP request.</li>
+      <li>Has funtionality to delete a quote using a DELETE HTTP request.</li>
+      <li>Can make requests through the command line using curl command and through web browser.</li>
+      <li>Overall, illustrates functionality of how a REST service interprets a request and sends back the requested information back to the client.</li>
+    </ul>
+  </div>
+  <div class="screenshot">
+    <img src="images/Quote_screenshot1.png" class="screenshot">
+    <br>
+    <img src="images/Quote_screenshot2.png" class="screenshot">
+  </div>
+  <a href="https://github.com/elicaluya/SE_457/tree/master/QuoteREST" target="_blank">Link to Github repository</a>
+  <br><br>
+</div>
+
+<br><br>
+
+<div class="project">
+  <h2><b>Sneaker and Streetwear Blog "RicketyKicks"</b></h2>
+  <div class="description">
+    <p><b>Languages Used:</b> HTML, CSS, Javascript</p>
+    <p><b>IDE/Applications Used:</b> Sublime, JQuery, Bootstrap</p>
+    <ul>
+      <li>Personal online blog that I built from scratch where me and my friend talk about sneakers and streetwear.</li>
+      <li>I am in charge of designing and building the site given my computer science background as well as writing some articles, whereas my friend only writes articles.</li>
+      <li>Currently not published online but we plan to very near in the future.</li>
+      <li>Mainly a way for me to practice my front end software development skills and try out new web development tools.</li>
+      <li>Took inspiration from popular online blogs and sites to create the most simplistic UX.</li>
+      <li>Use methodologies from my Human-Computer Interaction graduate courses to implement into the site like ease of use and efficiency.</li>
+    </ul>
+  </div>
+  <div class="screenshot">
+    <img src="images/blog_screenshot1.png" class="screenshot">
+    <img src="images/blog_screenshot2.png" class="screenshot">
+  </div>
+  <a href="https://github.com/elicaluya/streetwear_blog" target="_blank">Link to Github repository</a>
+  <br><br>
+</div>
+
+<br><br>
+
 
 <!-- For Scroll to top Button -->
 <button onclick="scrollToTop()" id="scrollButton" title="Scroll to Top">Top</button>
-
-
-
-
 
 <!-- Javascript for the scroll to top button -->
 <script>
