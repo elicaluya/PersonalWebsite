@@ -4,4 +4,4 @@ Currently not published online yet but will update repository when it is finishe
 Most of the pages are finished to show off my experience and notable projects.
 
 To run:
-double click "main.html" file and page will open in web browser
+double click "index.html" file and page will open in web browser
