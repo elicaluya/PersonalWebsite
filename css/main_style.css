@@ -2,6 +2,29 @@ h2 {
   text-decoration: underline;
 }
 
+div.project {
+  font-family: monospace;
+  text-align: center;
+  border: 3px;
+  border-style: solid;
+  border-color: #162a36;
+  border-radius: 25px;
+  margin-left: 50px;
+  margin-right: 50px;
+  box-shadow: 5px 10px 8px #162a36;
+}
+
+div.description {
+  text-align: left;
+  position: relative;
+  padding-left: 5%;
+  padding-right: 5%;
+  bottom: 70px;
+  width: 50%;
+  display: table-cell;
+}
+
+
 #scrollButton {
   display: none;
   position: fixed;
